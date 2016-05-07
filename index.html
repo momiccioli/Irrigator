@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="irrigator.css">
+	<title>Irrigator</title>
+	<h1>The Irrigator
+	<span id="ind" class="dot dot-red"><span class="dot-inner"></span></span>
+	</h1>
+</head>
+<body>
+
+   <div id="system" align="center">
+		<h3>&nbspSystem Status</h3>
+		<div id="clockbox"></div>
+		<button id="systemOn" class="sysBtn" disabled>Enable</button>
+   	<button id="systemOff" class="sysBtn" disabled>Disable</button>
+		<button id="Tryit" onclick="myFunction()">Try it</button>
+	</div>
+
+	<div id="settings" align="center">
+		<h3>&nbspSettings</h3>
+		Program Running 3<br>
+		Zone Running 6
+	</div>
+
+	<div id="program" align="left">
+		<h3>&nbspProgram Running Now</h3>
+		<div>
+			<div class="inner"><output id="Z01" >1 - Front Garden</output></div>
+			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"
+			oninput="outputUpdate('#Zn01',value)">&nbsp<output class="minutes" for="Zone01" id="Zn01" align="center">50</output></div>
+		</div>
+		<div>
+			<div class="inner">2 - Front Lawn</div>
+			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"
+			oninput="outputUpdate('#Zn02',value)">&nbsp<output class="minutes" for="Zone02" id="Zn02" align="center">45</output></div>
+		</div>
+		<div>
+			<div class="inner">3 - Right Lawn</div>
+			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
+		</div>
+		<div>
+			<div class="inner">4 - Left Lawn</div>
+			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
+		</div>
+		<div>
+			<div class="inner">5 - Living Room Garden</div>
+			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
+		</div>
+		<div>
+			<div class="inner">6 - Trees</div>
+			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
+		</div>
+		<div>
+			<div class="inner">7 - Back Right Lawn</div>
+			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
+		</div>
+		<div>
+			<div class="inner">8 - Back Left Lawn</div>
+			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
+		</div>
+		<div>
+			<div class="inner">9 - Shed Garden</div>
+			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
+		</div>
+		<div>
+			<div class="inner">10 - Master Garden</div>
+			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
+		</div>
+		<div>
+			<div class="inner">11 - Court Yard</div>
+			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="irrigator.js"></script>
+</body>
+</html>
