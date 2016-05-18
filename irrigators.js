@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 // This is node.js Websocket server it run a simple server server.
+// it needs to run on a raspi with GPIO. this is the server side, port 12345.
 
 var GPIO = require('onoff').Gpio;
 var WebSocketServer = require('ws').Server;
