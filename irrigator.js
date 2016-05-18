@@ -1,5 +1,6 @@
-// Home grown websocket server
-// This needs to run on a Raspberry pi.
+// Home grown websocket server web page to talk to a raspi over port 12345
+// The raspi needs to have gpio running
+
 var s = new WebSocket("ws://bostonpi:12345/");
 var bostonPi  = false;
 var tmonth    = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
