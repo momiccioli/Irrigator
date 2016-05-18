@@ -25,52 +25,16 @@
 
 	<div id="program" align="left">
 		<h3>&nbspProgram Running Now</h3>
-		<div>
-			<div class="inner"><output id="Z01" >1 - Front Garden</output></div>
-			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"
-			oninput="outputUpdate('#Zn01',value)">&nbsp<output class="minutes" for="Zone01" id="Zn01" align="center">50</output></div>
-		</div>
-		<div>
-			<div class="inner">2 - Front Lawn</div>
-			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"
-			oninput="outputUpdate('#Zn02',value)">&nbsp<output class="minutes" for="Zone02" id="Zn02" align="center">45</output></div>
-		</div>
-		<div>
-			<div class="inner">3 - Right Lawn</div>
-			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
-		</div>
-		<div>
-			<div class="inner">4 - Left Lawn</div>
-			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
-		</div>
-		<div>
-			<div class="inner">5 - Living Room Garden</div>
-			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
-		</div>
-		<div>
-			<div class="inner">6 - Trees</div>
-			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
-		</div>
-		<div>
-			<div class="inner">7 - Back Right Lawn</div>
-			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
-		</div>
-		<div>
-			<div class="inner">8 - Back Left Lawn</div>
-			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
-		</div>
-		<div>
-			<div class="inner">9 - Shed Garden</div>
-			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
-		</div>
-		<div>
-			<div class="inner">10 - Master Garden</div>
-			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
-		</div>
-		<div>
-			<div class="inner">11 - Court Yard</div>
-			<div class="inner"><input type="range" id="Zone01" class="MXO" min="0" max="30" value="0"></div>
-		</div>
+		<script>
+			for (i = 1; i < 12; i++) {
+				document.write('<div><div class="inner"><output id="Z' + i + '" >' + i + ' - Zone Name</output></div>');
+				document.write('<div class="inner"><input type="range" id="Zone' + i + '" class="MXO" min="0" max="30" value="0"');
+				document.write('oninput="outputUpdate(');
+				document.write("'#Zn" + i + "'");
+				document.write(',value)">&nbsp<output class="minutes" for="Zone' + i + '" id="Zn' + i + '" align="center">5</output></div>');
+				document.write('</div>');
+			}
+		</script>
 	</div>
 
 	<script type="text/javascript" src="irrigator.js"></script>

@@ -23,9 +23,9 @@ div.inner { border: 0px solid white; margin-left: 10px; }
 
 #system   { position: absolute; width: 200px; height: 100px; top: 80px; }
 #settings { position: absolute; width: 200px; height: 400px; top: 190px; }
-#program  { position: absolute; width: 800px;  top: 80px; left: 215px}
+#program  { position: absolute; width: 600px;  top: 80px; left: 215px}
 
-h1, h2, h3 { color: gray;}
+h2, h3 { color: gray;}
 
 h3 {
     font-family: Calibri;
@@ -95,7 +95,7 @@ button:disabled{color: gray; border: 1px solid gray;}
 
 input[type=range].MXO {
   -webkit-appearance: none;
-  width: 50%;
+  width: 90%;                       /* This sets the slider width with the div */
   margin-bottom: 7px;
 }
 

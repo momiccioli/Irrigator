@@ -1,4 +1,6 @@
-var s = new WebSocket("ws://192.168.1.159:12345/");
+// Home grown websocket server
+// This needs to run on a Raspberry pi.
+var s = new WebSocket("ws://bostonpi:12345/");
 var bostonPi  = false;
 var tmonth    = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
 var systemOn  = document.getElementById("systemOn");  //Define the on button

@@ -1,0 +1,7 @@
+This is a home grown Websocket node server. It is designed to interact with a
+hardwired web page (index.html).  This will not be continued but used as a ref.
+
+The WebSocket code for Node.js (irrigator.js) must be run on a rapsi with GPIO
+active and working.  The html, css and can be local or reside else where.
+
+This server is running on port 12345. 
